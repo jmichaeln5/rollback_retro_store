@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RollbackRetro</title>
+    <title>Rollback Retro</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
+
+    <%= link_to 'Home Page', home_index_path %> |
+    <%= link_to 'Products', products_path %> |
+    <%= link_to 'Reviews', reviews_path %>
+
     <%= yield %>
   </body>
 </html>
